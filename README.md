@@ -20,11 +20,12 @@
     </ul>
     <h4>📛 Logotipo:</h4>
     <img src="https://github.com/tayhsn/coffeshop/blob/main/images/logos/adm.png" />
-    <img src="https://github.com/tayhsn/coffeshop/blob/main/images/pallete.png" style="zoom:19%;" />
+    <img src="https://github.com/tayhsn/coffeshop/blob/main/images/pallete.png" style="width: 19%;" />
     <h4>🎨 Paleta de cores HEX: </h4> #13261F | #594E2D | #A6823F | #8C6F3A | #BF8845
     <h5>
-    Demonstração da página: --
+    Demonstração da página:
 	</h5>
+    <img src="https://github.com/tayhsn/coffeshop/blob/main/demo.gif" />
     <h5 align="center">
 	CoffeShop©. <br>
 	Todos os Direitos Fictícios. <br>
