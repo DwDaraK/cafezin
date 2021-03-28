@@ -19,8 +19,8 @@
         </li>
     </ul>
     <h4>📛 Logotipo:</h4>
-    <img src="C:\workspace\_coffeshop\images\back-green.png" style="zoom:50%;" />
-    <img src="C:\workspace\_coffeshop\images\pallete.png" style="zoom:29%;" />
+    <img src="C:\workspace\_coffeshop\images\logos\adm.png" />
+    <img src="C:\workspace\_coffeshop\images\pallete.png" style="zoom:19%;" />
     <h4>🎨 Paleta de cores HEX: </h4> #13261F | #594E2D | #A6823F | #8C6F3A | #BF8845
     <h5>
     Demonstração da página: --
@@ -30,3 +30,4 @@
 	Todos os Direitos Fictícios. <br>
 	Programação WEB 2021.1
 	</h5>
+
