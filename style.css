@@ -5,7 +5,7 @@
 }
 
 
- /* INICIO NAV */
+ /* NAV */
 
 .logoHeader {
     width: 40%;
@@ -27,7 +27,7 @@ ul .nav-link:hover {
     border-radius: 100px;
 }
 
- /* INICIO MAIN */
+ /* MAIN */
 
 main {
     display: grid;
@@ -43,7 +43,7 @@ main img {
     height: 100%;
 }
 
- /* INICIO SECTION */
+ /* SECTION */
 
 section {
     background-color: #13261F;
@@ -100,10 +100,10 @@ footer a:hover {
     background-color: #13261F;
     width: 100%;
     height: 450px;
-    padding: 10px;
+    padding: 20px;
     margin-top: 80px;
 
-    /* display: flex; */
+    
 }
 
 
