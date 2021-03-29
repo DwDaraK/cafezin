@@ -4,11 +4,16 @@
     box-sizing: border-box;
 }
 
+
  /* INICIO NAV */
 
 .logoHeader {
     width: 40%;
     border-radius:50%;
+}
+
+ul li {
+    list-style: none;
 }
 
 
@@ -44,7 +49,7 @@ section {
     background-color: #13261F;
 }
 
-#sobre {
+section #sobre {
     padding: 100px 50px 50px 50px;
    
     font-family: 'Lexend', sans-serif;
@@ -53,8 +58,6 @@ section {
     text-align: justify;
     
     color: #BF8845;
-
-    display: flex;
 }
 
 section #sobre img {
@@ -89,12 +92,6 @@ footer a:hover {
     border-radius: 100px;
 }
 
-footer #contato {
-    display: flex;
-    flex-wrap: wrap;
-
-    margin-left: 60px;
-}
 
 
     /* ADM */
