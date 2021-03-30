@@ -17,19 +17,18 @@ ul li {
 }
 
 
-ul .nav-link {
+ul li .nav-link {
     padding: 20px;
+    margin-right: 20px ;
 }
 
-ul .nav-link:hover {
+ul li .nav-item:hover {
     color: #A6823F;
-    background-color: white;
-    border-radius: 100px;
 }
 
  /* MAIN */
 
-main {
+#home {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
