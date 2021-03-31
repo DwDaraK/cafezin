@@ -20,12 +20,12 @@
     </ul>
     <h4>📛 Logotipo:</h4>
     <img src="https://github.com/tayhsn/coffeshop/blob/main/images/logos/logotipo.png" />
-    <img src="https://github.com/tayhsn/coffeshop/blob/main/images/pallete.png" style="width=20%" />
-    <h4>🎨 Paleta de cores HEX: </h4> #13261F | #594E2D | #A6823F | #8C6F3A | #BF8845
     <h5>
     Demonstração da página:
 	</h5>
-    <img src="https://github.com/tayhsn/coffeshop/blob/main/demo.gif" />
+    <h4>
+       <a href="https://cafezin.netlify.app/"> Cafezin App </a>
+    </h4>
     <h5 align="center">
 	CoffeShop©. <br>
 	Todos os Direitos Fictícios. <br>
