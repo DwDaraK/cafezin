@@ -13,7 +13,7 @@
 }
 
 ul li .nav-link {
-    padding: 20px ;
+    padding: 15px;
     margin: 0 20px 0 20px;
 }
 
@@ -75,7 +75,7 @@ footer #logo {
 }
 
 footer a {
-   
+    text-decoration: none;
     color: #13261F;
 
     padding: 10px;
