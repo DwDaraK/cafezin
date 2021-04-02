@@ -18,10 +18,17 @@ ul li .nav-link {
 }
 
 .nav-link:hover {
+    width: 100%;
+}
+
+.navbar-collapse .nav-item {
+    width: max-content;
+}
+
+.navbar-collapse .nav-item:hover {
     background-color: #BF8845;
     border-radius: 100px;
 }
-
  /* MAIN */
 
 #home {
@@ -106,3 +113,11 @@ footer a:hover {
     width: auto;
     border-radius: 10px;
 }
+
+.nav-adm:hover {
+    background-color: #BF8845;
+    border-radius: 100px;
+}
+
+
+ 
