@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
  /* NAV */
 
 .logoHeader {
@@ -15,10 +14,15 @@
 ul li .nav-link {
     padding: 15px;
     margin: 0 20px 0 20px;
+   
 }
 
 .nav-link:hover {
     width: 100%;
+}
+
+.navbar-collapse {
+    height: 100px;
 }
 
 .navbar-collapse .nav-item {
@@ -35,13 +39,11 @@ ul li .nav-link {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-
-    margin-top: 85px;
 }
 
 main img {
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
 }
 
 
@@ -94,30 +96,3 @@ footer a:hover {
     border-radius: 100px;
     text-decoration: none;
 }
-
-
-
-    /* ADM */
-
-#adm {
-    background-color: #13261F;
-    width: 100%;
-    height: 450px;
-    padding: 20px;
-    margin-top: 75px;
-}
-
-
-
-.logoADM {
-    width: auto;
-    border-radius: 10px;
-}
-
-.nav-adm:hover {
-    background-color: #BF8845;
-    border-radius: 100px;
-}
-
-
- 

@@ -24,9 +24,9 @@
     <title> <BR> CAFÉ ZIN</title>
 </head>
 <body>
-      <!-- -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top justify-content-center">
-        <a class="navbar-brand" href="#home"><img src="/images/logos/header.gif" class="logoHeader"></a>
+      <!-- NAVEGAÇÃO -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center">
+        <a class="navbar-brand" href="#home"><img src="images/logos/header.gif" class="logoHeader"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -39,16 +39,84 @@
               <a class="nav-link" href="#sobre">Quem Somos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contato">Entre em contato</a>
+              <a class="nav-link" href="#contato">Contatos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/adm.html">ADM</a>
+              <a class="nav-link" href="" data-toggle="modal" data-target="#myModalPROD">Bebidas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="" data-toggle="modal" data-target="#myModalADM">ADM</a>
             </li>
           </ul>
         </div>
       </nav>
-     
-      <!-- -->
+
+      <!-- The ADM Modal -->
+      <div class="modal fade" id="myModalADM">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">ACESSO ADMINISTRATIVO</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              <form action="control/ctr-funcionario.php" method="POST">
+                <div class="d-flex flex-column p-2 bd-highlight justify-content-around align-items-center" >
+                    <div>
+                        <img src="images/logos/logotipo.png" alt="logo Cafézin" class="logoADM">
+                    </div> <br>
+                    <div class="form-floating mb-3 d-flex">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="Matricula Cafezin" name="txtLogin">
+                        <label for="floatingInput">Login</label>
+                    </div>
+                    <div class="form-floating d-flex">
+                      <input type="password" class="form-control" id="floatingPassword" placeholder="Senha" name="txtSenha">
+                      <label for="floatingPassword">Senha</label>
+                    </div> <br>
+                    <button type="button" class="btn btn-dark">Enviar</button>
+                </div>
+              </form>
+            </div>
+            <!-- autenticação de acesso -->
+              <?php
+                  if($_GET['login'] == "false"){        
+              ?>
+                  <div class="alert alert-danger alert-dismissible fade show">
+                      <button type="button" class="close" data-dismiss="alert">&times;</button>
+                      <strong>Falhou!</strong> Login ou Senha incorreto.
+                  </div>
+              <?php } ?>
+              <!-- -->
+          </div>
+        </div>
+      </div>
+
+            <!-- The PRODUCTS Modal -->
+      <div class="modal" id="myModalPROD">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">CONHEÇA NOSSOS CAFÉS</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              Modal body..
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      
+      <!-- IMAGENS MAIN -->
      <main id="home">
       <img src="images/localpic/photo-1.jpg" alt="Welcome">
       <img src="images/localpic/photo-2.jpg" alt="Have a Break">
@@ -58,7 +126,7 @@
       <img src="images/localpic/photo-6.jpg" alt="Love is Action">
      </main>
 
-      <!-- -->
+      <!-- SECTION SOBRE -->
      <section>
       <div class="d-flex" id="sobre">
         <div class="row flex-wrap-reverse">
@@ -77,18 +145,18 @@
       </div>
      </section>
 
-      <!-- -->
+      <!-- RODAPÉ -->
      <footer>
       <div class="d-flex flex-row p-2 bd-highlight justify-content-around align-items-center flex-wrap" id="contato">
           <div class="p-2 bd-highlight">
             <h6>REDES SOCIAIS</h6>
-            <a href="/"><img src="/images/instagram.png" alt="Instagram"> Instagram</a><br>
-            <a href="/"><img src="/images/facebook.png" alt="Facebook"> Facebook</a><br>
-            <a href="/"><img src="/images/youtube.png" alt="Youtube"> Youtube</a>
+            <a href="/"><img src="images/instagram.png" alt="Instagram"> Instagram</a><br>
+            <a href="/"><img src="images/facebook.png" alt="Facebook"> Facebook</a><br>
+            <a href="/"><img src="images/youtube.png" alt="Youtube"> Youtube</a>
           </div> 
 
           <div class="p-2 bd-highlight">
-              <img src="/images/logos/footer.png" id="logo"/>
+              <img src="images/logos/footer.png" id="logo"/>
               <h6>
                 Todos os Direitos Fictícios. <br>
                 Programação WEB 2021.1
@@ -97,8 +165,8 @@
 
           <div class="p-2 bd-highlight">
             <h6>FALE COM A GENTE</h6>
-            <a href="/"> <img src="/images/whatsapp.png" alt="contato whatsapp"> Clique aqui e envie um whatsapp</a> <br> <br>
-            <a href="/"> <img src="/images/email.png" alt="contato e-mail">Clique aqui e envie um e-mail</a>
+            <a href="/"> <img src="images/whatsapp.png" alt="contato whatsapp"> Clique aqui e envie um whatsapp</a> <br> <br>
+            <a href="/"> <img src="images/email.png" alt="contato e-mail">Clique aqui e envie um e-mail</a>
           </div>
       </div>
      </footer>
