@@ -1,98 +1,95 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
- /* NAV */
+/* NAV */
 
 .logoHeader {
-    width: 40%;
-    border-radius:50%;
+  width: 40%;
+  border-radius: 50%;
 }
 
 ul li .nav-link {
-    padding: 15px;
-    margin: 0 20px 0 20px;
-   
+  padding: 15px;
+  margin: 0 20px 0 20px;
 }
 
 .nav-link:hover {
-    width: 100%;
-}
-
-.navbar-collapse {
-    height: 100px;
+  width: 100%;
 }
 
 .navbar-collapse .nav-item {
-    width: max-content;
+  width: max-content;
 }
 
 .navbar-collapse .nav-item:hover {
-    background-color: #BF8845;
-    border-radius: 100px;
+  background-color: #bf8845;
+  border-radius: 100px;
 }
- /* MAIN */
+/* MAIN */
 
 #home {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 main img {
-    width: auto;
-    height: auto;
+  width: 100%;
+  height: 100%;
 }
 
+/* PRODUTOS */
 
- /* SECTION */
+
+
+/* SECTION */
 
 section {
-    background-color: #13261F;
+  background-color: #13261f;
 }
 
 section #sobre {
-    padding: 100px 50px 50px 50px;
-   
-    font-family: 'Lexend', sans-serif;
-    font-size: small;
-    line-height: 1.5;
-    text-align: justify;
-    
-    color: #BF8845;
+  padding: 100px 50px 50px 50px;
+
+  font-family: "Lexend", sans-serif;
+  font-size: small;
+  line-height: 1.5;
+  text-align: justify;
+
+  color: #bf8845;
 }
 
 section #sobre img {
-    width: 100%;
+  width: 100%;
 }
 
-
- /* FOOTER */
+/* FOOTER */
 
 footer {
-    background-color: #A6823F;
+  background-color: #a6823f;
 }
 
 footer img {
-    width: 35px;
+  width: 35px;
 }
 
 footer #logo {
-    width: auto;
+  width: auto;
 }
 
 footer a {
-    text-decoration: none;
-    color: #13261F;
+  text-decoration: none;
+  color: #13261f;
 
-    padding: 10px;
+  padding: 10px;
 }
 
 footer a:hover {
-    color: whitesmoke;
-    background-color:  #13261F;
-    border-radius: 100px;
-    text-decoration: none;
+  color: whitesmoke;
+  background-color: #13261f;
+  border-radius: 100px;
+  text-decoration: none;
 }
