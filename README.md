@@ -1,15 +1,25 @@
-# :coffee: CoffeShop™️
+# <​h​1​ ​al​i​gn​=​"center"> :coffee: Cafézin™️ </h1>
 
 <div align="left"> 
-    <h3>
+    <h4>
         💬 Sobre:
-    </h3>
-    <h5 style="text-align:justify">
-        CoffeShop™ é uma marca fictícia elaborada como tema do Projeto Final da disciplina Programação WEB - Desenvolvimento de Sistemas - SENAI/BA, onde foi desenvolvido um site completo, com Frontend e Backend.
-    </h5>
-    <h3>
+    </h4>
+    <h4 style="text-align:justify">
+        <strong>Cafézin</strong> é uma cafeteria fictícia, tema de um site desenvolvido com <strong>Frontend { HTML, CSS, BOOTSTRAP }, Backend { PHP }, e integração ao banco de dados { mySQL }</strong> submetido para avaliação no Projeto Final de Programação WEB do curso Desenvolvimento de Sistemas @ SENAI/BA.
+    </h4>
+    <h4>
+        Nota das avaliações:
+        <ul>
+            <li>
+                Frontend: <strong> 4/4 </strong>
+            </li>
+            <li>
+                Backend: <strong> em produção </strong>
+            </li>
+        </ul>
+    </h4>
+    <h4>
         :octocat: Desenvolvedores:
-    </h3>
     <ul>
         <li>
             👨 Edvan Carvalho
@@ -18,18 +28,12 @@
             👩 Tayanne Novais
         </li>
     </ul>
-    <h4>📛 Logotipo:</h4>
-    <img src="https://github.com/tayhsn/coffeshop/blob/main/images/logos/logotipo.png" />
-    <h5>
-    Conheça a página:
-	</h5>
-    <h4>
-       <a href="https://cafezin.netlify.app/"> Cafezin App </a>
     </h4>
     <h5 align="center">
-	CoffeShop©. <br>
+	Cafezin©. <br>
 	Todos os Direitos Fictícios. <br>
 	Programação WEB 2021.1
 	</h5>
+
 
 
