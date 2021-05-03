@@ -175,7 +175,7 @@
      </main>
 
       <!-- SECTION SOBRE -->
-     <section>
+     <section class="pag-inicial">
       <div class="d-flex" id="sobre">
         <div class="row flex-wrap-reverse">
         <div class="col-sm-6 lead">

@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  font-family: "Lexend", sans-serif;
 }
 
 /* NAV */
@@ -43,18 +45,15 @@ main img {
 
 /* PRODUTOS */
 
+/* SECTION PAGINA INICIAL */
 
-
-/* SECTION */
-
-section {
+section .pag-inicial {
   background-color: #13261f;
 }
 
 section #sobre {
   padding: 100px 50px 50px 50px;
 
-  font-family: "Lexend", sans-serif;
   font-size: small;
   line-height: 1.5;
   text-align: justify;
@@ -64,6 +63,11 @@ section #sobre {
 
 section #sobre img {
   width: 100%;
+}
+
+/* FUNCIONARIO */
+section .funcionario {
+  background-color: white;
 }
 
 /* FOOTER */
