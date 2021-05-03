@@ -45,9 +45,9 @@
 
 
       <!-- SECTION SOBRE -->
-     <section class="funcionario">
+     <section>
       <div class="d-flex" id="sobre">
-        <div class="row flex-wrap">
+        <div class="row flex-wrap func">
           <h1>Funcionários:</h1>
           <table class="table table-striped">
             <thead>

@@ -175,8 +175,8 @@
      </main>
 
       <!-- SECTION SOBRE -->
-     <section class="pag-inicial">
-      <div class="d-flex" id="sobre">
+     <section>
+      <div class="d-flex pag-inicial" id="sobre">
         <div class="row flex-wrap-reverse">
         <div class="col-sm-6 lead">
             CaféZin™ está presente em 27 países em todos os continentes. <br> <br>
