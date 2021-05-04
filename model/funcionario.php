@@ -18,8 +18,8 @@
 
     public function insert($nome, $cpf, $login, $senha) {
       try {
-        $sql = "insert into funcionario(nome, cpf, login, senha)
-                values(:nome, :cpf, :login, :senha)";
+        $sql = " INSERT INTO funcionario(nome, cpf, login, senha)
+                VALUES(:nome, :cpf, :login, :senha) ";
         $stmt = $this -> conn -> prepare($sql);
         $stmt -> bindParam(":nome", $nome);
         $stmt -> bindParam(":cpf", $cpf);
@@ -36,9 +36,31 @@
       }
     }
 
+    public function update($nome, $cpf, $login, $senha, $id) {
+      try {
+        $sql = " UPDATE funcionario 
+                 SET nome = :nome, cpf = :cpf, login = :login, senha = :senha 
+                 WHERE id = :id ";
+        $stmt = $this -> conn -> prepare($sql);
+        $stmt -> bindParam(":nome", $nome);
+        $stmt -> bindParam(":cpf", $cpf);
+        $stmt -> bindParam(":login", $login);
+        $stmt -> bindParam(":senha", $senha);
+        $stmt -> bindParam(":id", $id);
+
+        $stmt -> execute();
+        return $stmt;
+
+      } catch(PDOException $e) {
+        echo("Error: ".$e -> getMessage());
+      } finally {
+        $this -> conn = null;
+      }
+    }
+
     public function delete($id) {
       try {
-        $sql = "delete from funcionario where id = :id";
+        $sql = "DELETE FROM funcionario WHERE id = :id";
         $stmt = $this -> conn -> prepare($sql);
         $stmt -> bindParam(":id", $id);
         
@@ -53,7 +75,7 @@
 
     public function validar($login, $senha){
       try{
-        $sql = "select * from funcionario where login = :login and senha = :senha";
+        $sql = "SELECT * FROM funcionario WHERE login = :login AND senha = :senha";
         $stmt = $this -> conn -> prepare($sql);
         $stmt -> bindParam(":login", $login);
         $stmt -> bindParam(":senha", $senha);

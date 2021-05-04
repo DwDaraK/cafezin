@@ -38,7 +38,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ">
             <li class="nav-item">
-              <a class="nav-link " href="index.php">Voltar a Pagina Inicial</a>
+              <a class="nav-link " href="funcionario.php">Funcionários</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="cliente.php">Clientes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="venda.php">Vendas</a>
             </li>
           </ul>
         </div>
@@ -79,6 +85,11 @@
                     <td>
                       <button type="button" class="btn btn-primary" 
                               data-toggle="modal" data-target="#myModalUpdate"
+                              data-id="<?php echo($objFunc['id']) ?>"
+                              data-nome="<?php echo($objFunc['nome']) ?>"
+                              data-cpf="<?php echo($objFunc['cpf']) ?>"
+                              data-login="<?php echo($objFunc['login']) ?>"
+                              data-senha="<?php echo($objFunc['senha']) ?>"
                               >Editar</button>
                     </td>
                     <td>
@@ -175,12 +186,24 @@
           <!-- Modal body -->
           <div class="modal-body">
             <form action="control/ctr-funcionario.php" method="POST">
-                  <input type="hidden" name="update">
-                  <div class="form-group">
-                    <label for="">Nome:</label>
-                    <input type="text" class="form-control" name="txtNome" readonly>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Enviar</button>
+            <input type="hidden" name="update" id="recebe-id">
+                    <div class="form-group">
+                      <label for="">Nome:</label>
+                      <input type="text" class="form-control" name="txtNome" id="recebe-nome">
+                    </div>
+                    <div class="form-group">
+                      <label for="">CPF:</label>
+                      <input type="text" class="form-control" name="txtCPF" id="recebe-cpf">
+                    </div>
+                    <div class="form-group">
+                      <label for="">Login:</label>
+                      <input type="text" class="form-control" name="txtLogin" id="recebe-login">
+                    </div>
+                    <div class="form-group">
+                      <label for="">Senha:</label>
+                      <input type="password" class="form-control" name="txtSenha" id="recebe-senha">
+                    </div>
+                    <button type="submit" class="btn btn-success">Enviar</button>
             </form>
           </div>
 
@@ -198,6 +221,24 @@
         var modal = $(this);
         modal.find('#recebe-id').val(recebeID);
         modal.find('#recebe-nome').val(recebeNome);
+      })
+    </script>
+
+    <script>
+      $('#myModalUpdate').on('show.bs.modal', function(event) {
+        var button = $(event.relatedTarget);
+        var recebeID = button.data('id');
+        var recebeNome = button.data('nome');
+        var recebeCPF = button.data('cpf');
+        var recebeLogin = button.data('login');
+        var recebeSenha = button.data('senha');
+
+        var modal = $(this);
+        modal.find('#recebe-id').val(recebeID);
+        modal.find('#recebe-nome').val(recebeNome);
+        modal.find('#recebe-cpf').val(recebeCPF);
+        modal.find('#recebe-login').val(recebeLogin);
+        modal.find('#recebe-senha').val(recebeSenha);
       })
     </script>
    

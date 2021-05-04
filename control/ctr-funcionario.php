@@ -31,4 +31,17 @@
       $objFunc -> redirect('../funcionario.php');
     }
   }
+
+  if(isset($_POST['update'])) {
+    $id = $_POST['update'];
+    $nome = $_POST['txtNome'];
+    $cpf = $_POST['txtCPF'];
+    $login = $_POST['txtLogin'];
+    $senha = $_POST['txtSenha'];
+
+    if($objFunc -> update($nome, $cpf, $login, $senha, $id))
+       $objFunc -> redirect('../funcionario.php');
+    }
+
+
 ?>
