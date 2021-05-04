@@ -82,16 +82,7 @@
                 </div>
               </form>
             </div>
-            <!-- autenticação de acesso -->
-              <?php
-                  if($_GET['login'] == "false"){        
-              ?>
-                  <div class="alert alert-danger alert-dismissible fade show">
-                      <button type="button" class="close" data-dismiss="alert">&times;</button>
-                      <strong>Falhou!</strong> Login ou Senha incorreto.
-                  </div>
-              <?php } ?>
-              <!-- -->
+            
           </div>
         </div>
       </div>
@@ -111,48 +102,54 @@
             <div class="modal-body">
               <div class="bebidas cafe-preto">
                     <img src="./images/localpic/cafe-preto.jpg" alt="Café Preto">
-                    <p>O queridinho do Brasileiro: café Preto!</p>
-                    <select>
-                      <option>Tamanho:</option>
-                      <option value="">200ml</option>
-                      <option value="">300ml</option>
-                      <option value="">500ml</option>
-                    </select>
-                    <forms>
-                      <p>Quantidade:</p>
-                      <input type="choose" value="">
-                    </forms>
-                    <button id="submit">Escolhido!</button>
+                    <div class="infos">
+                        <p>O queridinho do Brasileiro: café Preto!</p>
+                        <select>
+                          <option>Tamanho:</option>
+                          <option value="">200ml</option>
+                          <option value="">300ml</option>
+                          <option value="">500ml</option>
+                        </select>
+                        <forms>
+                          <p>Quantidade:</p>
+                          <input type="choose" value="">
+                        </forms>
+                        <button id="submit">Escolhido!</button>
+                    </div>
               </div>
               <div class="bebidas cafe-expresso">
                     <img src="./images/localpic/cafe-expresso.jpg" alt="Café Preto">
-                    <p>Pra quem gosta de café rápido e forte: café expresso!</p>
-                    <select>
-                      <option>Tamanho:</option>
-                      <option value="">200ml</option>
-                      <option value="">300ml</option>
-                      <option value="">500ml</option>
-                    </select>
-                    <forms>
-                      <p>Quantidade:</p>
-                      <input type="choose" value="">
-                    </forms>
-                    <button id="submit">Escolhido!</button>
+                    <div class="infos">
+                        <p>Pra quem gosta de café rápido e forte: café expresso!</p>
+                        <select>
+                          <option>Tamanho:</option>
+                          <option value="">200ml</option>
+                          <option value="">300ml</option>
+                          <option value="">500ml</option>
+                        </select>
+                        <forms>
+                          <p>Quantidade:</p>
+                          <input type="choose" value="">
+                        </forms>
+                        <button id="submit">Escolhido!</button>
+                    </div>
               </div>
               <div class="bebidas cappucino">
                     <img src="./images/localpic/cappucino.jpg" alt="Café Preto">
-                    <p>Pra atender todos os gostos: cappucino!</p>
-                    <select>
-                      <option>Tamanho:</option>
-                      <option value="">200ml</option>
-                      <option value="">300ml</option>
-                      <option value="">500ml</option>
-                    </select>
-                    <forms>
-                      <p>Quantidade:</p>
-                      <input type="choose" value="">
-                    </forms>
-                    <button id="submit">Escolhido!</button>
+                    <div class="infos">
+                        <p>Pra atender todos os gostos: cappucino!</p>
+                        <select>
+                          <option>Tamanho:</option>
+                          <option value="">200ml</option>
+                          <option value="">300ml</option>
+                          <option value="">500ml</option>
+                        </select>
+                        <forms>
+                          <p>Quantidade:</p>
+                          <input type="choose" value="">
+                        </forms>
+                        <button id="submit">Escolhido!</button>
+                    </div>
               </div>
               <div class="carrinho">
                     <h3>Valor total do pedido:</h3>
