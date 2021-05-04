@@ -47,7 +47,7 @@ main img {
 
 /* SECTION PAGINA INICIAL */
 
-section {
+section .pag-inicial {
   background-color: #13261f;
 }
 
@@ -66,9 +66,6 @@ section #sobre img {
 }
 
 /* FUNCIONARIO */
-section .func {
-  background-color: white;
-}
 
 /* FOOTER */
 

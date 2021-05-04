@@ -65,19 +65,20 @@
             <!-- Modal body -->
             <div class="modal-body">
               <form action="control/ctr-funcionario.php" method="POST">
+                <input type="hidden" name="validar">
                 <div class="d-flex flex-column p-2 bd-highlight justify-content-around align-items-center" >
                     <div>
                         <img src="images/logos/logotipo.png" alt="logo Cafézin" class="logoADM">
                     </div> <br>
                     <div class="form-floating mb-3 d-flex">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="Matricula Cafezin" name="txtLogin">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Login" name="txtLogin">
                         <label for="floatingInput">Login</label>
                     </div>
                     <div class="form-floating d-flex">
                       <input type="password" class="form-control" id="floatingPassword" placeholder="Senha" name="txtSenha">
                       <label for="floatingPassword">Senha</label>
                     </div> <br>
-                    <button type="button" class="btn btn-dark">Enviar</button>
+                    <button type="submit" class="btn btn-dark">Enviar</button>
                 </div>
               </form>
             </div>
@@ -179,7 +180,7 @@
       <div class="d-flex pag-inicial" id="sobre">
         <div class="row flex-wrap-reverse">
         <div class="col-sm-6 lead">
-            CaféZin™ está presente em 27 países em todos os continentes. <br> <br>
+              CaféZin™ está presente em 27 países em todos os continentes. <br> <br>
               Com a primeira loja inaugurada em 1970, por Edvan Carvalho & Tayanne Novais, dois amigos visionários que tinham a missão de unir pessoas. <br><br>
               Com 50 anos no mercado Nacional & 42 anos Internacional, seguimos nos reinventando e inovando através de propostas baseadas no bem-estar das pessoas e do planeta. <br>
               Orgulhosamente, todas as nossas franquias exercem políticas de compensação de resíduos e logística reversa para reciclagem de materias. <br> <br>
